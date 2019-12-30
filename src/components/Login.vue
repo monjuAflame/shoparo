@@ -32,7 +32,7 @@
                             </div>
 
                              <div class="form-group">
-                                <button class="btn btn-primary">Login</button>
+                                <button class="btn btn-primary" @click="login">Login</button>
                             </div>
 
                         </div>
@@ -74,7 +74,7 @@
 
 <script>
 
-import {fb} from '../firebase';
+import {fb,db} from '../firebase';
 
 export default {
   name: "Login",
@@ -90,11 +90,11 @@ export default {
   },
   methods:{
   	login(){
-  		fb.auth().signInWithEmailAndPassword(this.email, this.password)
+  		 fb.auth().signInWithEmailAndPassword(this.email, this.password)
                         .then(() => {
-                        $('#login').modal('hide')
-                          this.$router.replace('admin');  
-                        })
+                          $('#login').modal('hide')
+                            this.$router.replace('admin');  
+                          })
                         .catch(function(error) {
                             // Handle Errors here.
                             var errorCode = error.code;
@@ -106,12 +106,22 @@ export default {
                             }
                             console.log(error);
                     });
+
   	},
   	register(){
   		fb.auth().createUserWithEmailAndPassword(this.email, this.password)
                 .then((user) => {
                     $('#login').modal('hide');
-                    console.log("Document successfully written!");
+                    // console.log("Document successfully written!");
+                    db.collection("profiles").doc(user.user.uid).set({
+                        name: this.name
+                    })
+                    .then(function() {
+                        console.log("Document successfully written!");
+                    })
+                    .catch(function(error) {
+                        console.error("Error writing document: ", error);
+                    });
              
                     this.$router.replace('admin');
                 })

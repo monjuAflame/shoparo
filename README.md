@@ -73,7 +73,11 @@ npm run lint
 
 
 
-
+Vuejs Full-Stack Course (AWS / Firebase) Build E-Commerce Website
+17 - Let's Build E Commerce Website with Vuejs and Firebase
+18 - How to Add Bootstrap 4 to Vuejs CLI Projects
+19 - Bootstrap 4 Navigation as Vuejs Component
+20 - Designing Fron-end Page of E-Commerce Website in Vuejs Application and Firebase
 
 
 
@@ -99,3 +103,32 @@ npm run lint
 25. How_to_Use_Vue-Firestore_(Design_the_Product_Page)
 26. Read_Data_from_Firestore_with_Realtime_Database_using_Vue_firestore
 
+27. Delete_Product_with_Vue-Firestore_Using_Sweet_Alert
+28. Editing_Product_with_Single_Modal_Window_in_Vuejs_and_Firestore
+29. How_to_Use_Quill_WYSIWYG_Edit_in_Vue_js_with_Image_Uploading
+30. Seperate_Tags_by_Comma_Aumaticailly_Using_Events_in_Vuejs
+31. How_to_Upload_Image_in_Firebase_Step_by_Step
+32. Upload_Mulitple_Images_for_Product_in_Vue_and_Firebase
+33. How_Delete_Image_From_DownloadURL_in_Firebase_and_vuejs
+34. Finalize_Product_Page_with_Fixing_Important_Issues
+35. User_Profile_page_in_Firebase_and_Firebase_Admin_API_Intro_with_Vuejs
+36. Get_Current_User_Login_User__Information_in_Profile_Page_Firebase_and_Vuejs
+37. Let's_Complete_User_Profile_Update_in_Firebase_and_Vuejs
+38. Reset_Password_Using_Email_Firebase_and_Vuejs
+39. Review_Products_Page_and_Fix_All_the_Issues_In_Firebase_and_Vuejs
+40. Creating_Order_Page_in_2_Minutes_Vuejs_and_Firebase
+41. 5_Best_Vuejs_Image_Slider_Product_Image_Slider
+42. Change_Dollar_to_Cent_Using_Vue_Filters_in_Vue_Firebase_app
+43. Creating_Add_To_Cart_Component_in_Vuejs_and_Firebase
+44. Vuex_-Understand_and_Configure_the_Easy_Way
+45. What's_Vuex_Mutation_Add_to_Cart_Example
+46. Shopping_Cart_with_Vuex_and_Vuejs_Firebase
+47. Add_Product_To_Cart_Without_Duplicating_the_Current_Product_in_Vuejs
+48. Shopping_Checkout_Page_with_Vue_and_Firebase
+49. Cart_Persistent_in_Vuex_Vuejs_and_Firebase
+50. Remove_Item_From_Cart_in_Vuex_and_LocalStorage
+
+51. How_Stripe_Payment_works_with_Firebase_and_Vuejs
+52. Deploy_your_Existing_Vuejs_App_to_Firebase_and_Firebase_tools
+53. How_to_Deploy_New_Vuejs_App_to_Firebase
+54. Firebase_Cloud_Functions_and_Nodejs_Code_with_Vuejs

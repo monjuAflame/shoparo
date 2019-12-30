@@ -16,13 +16,13 @@
                 <!-- sidebar-header  -->
                 <div class="sidebar-item sidebar-header d-flex flex-nowrap">
                     <div class="user-pic">
-                        <img class="img-responsive img-rounded" src="img/user.jpg" alt="User picture">
+                        <img class="img-responsive img-rounded" src="/img/user.png" alt="User picture">
                     </div>
                     <div class="user-info">
                         <span class="user-name">Jhon
                             <strong>Smith</strong>
                         </span>
-                        <span class="user-role">Administrator</span>
+                        <span class="user-role">{{ email }}</span>
                         <span class="user-status">
                             <i class="fa fa-circle"></i>
                             <span>Online</span>
@@ -87,6 +87,18 @@
                             <router-link to="/admin/product">
                                 <i class="fa fa-calendar"></i>
                                 <span class="menu-text">Products</span>
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link to="/admin/profile">
+                                <i class="fa fa-user"></i>
+                                <span class="menu-text">Profile</span>
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link to="/admin/order">
+                                <i class="fa fa-user"></i>
+                                <span class="menu-text">Orders</span>
                             </router-link>
                         </li>
                         <li>
@@ -209,6 +221,15 @@ export default {
   components: {
     Hero
   },
+  props: {
+    msg: String
+  },
+  data() {
+    return{
+        name:null,
+        email:null
+    }
+  },
   methods:{
     closeMenu(){
        $(".page-wrapper").toggleClass("toggled");
@@ -219,6 +240,10 @@ export default {
             this.$router.replace('/');
         })
     }
+  },
+  created(){
+    var user = fb.auth().currentUser;
+    this.email = user.email;
   }
 
 };
